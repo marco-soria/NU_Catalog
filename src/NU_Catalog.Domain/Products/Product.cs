@@ -1,0 +1,67 @@
+using System.Text.RegularExpressions;
+using NU_Catalog.Domain.Abstractions;
+using NU_Catalog.Domain.Products.Events;
+
+namespace NU_Catalog.Domain.Products;
+
+public sealed partial class Product : Entity
+{
+    public string Name { get; set; } = default!;
+    public decimal Price { get; set; } = default!;
+    public string? Description {get;set;}
+    public string? ImageUrl {get; set;}
+    public string? Code {get;set;}
+    public Guid CategoryId {get;set;}
+    private Product(){}
+    private Product(
+        Guid id,
+        string name,
+        decimal price,
+        string description,
+        string imageUrl,
+        string code,
+        Guid categoryId
+    ) : base(id)
+    {
+        Name = name;
+        Price = price;
+        Description = description;
+        ImageUrl = imageUrl;
+        Code = code;
+        CategoryId = categoryId;
+    }
+
+    public static Product Create(
+        string name,
+        decimal price,
+        string description,
+        string imageUrl,
+        string code,
+        Guid categoryId
+        )
+        {
+            var id = Guid.NewGuid();
+            if(string.IsNullOrEmpty(code))
+            {
+                code = MyRegex().Replace(Convert.ToBase64String(id.ToByteArray()), ""
+);
+            }
+
+            var product = new Product(
+                id,
+                name,
+                price,
+                description,
+                imageUrl,
+                code,
+                categoryId
+            );
+
+            var productDomainEvent = new ProductCreatedDomainEvent(product.Id);
+            product.RaiseDomainEvent(productDomainEvent);
+            return product;
+        }
+
+    [GeneratedRegex("[/+=]")]
+    private static partial Regex MyRegex();
+}
