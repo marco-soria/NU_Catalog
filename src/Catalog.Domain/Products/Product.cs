@@ -1,8 +1,8 @@
 using System.Text.RegularExpressions;
-using NU_Catalog.Domain.Abstractions;
-using NU_Catalog.Domain.Products.Events;
+using Catalog.Domain.Abstractions;
+using Catalog.Domain.Products.Events;
 
-namespace NU_Catalog.Domain.Products;
+namespace Catalog.Domain.Products;
 
 public sealed partial class Product : Entity
 {

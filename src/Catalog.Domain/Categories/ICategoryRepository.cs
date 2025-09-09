@@ -1,4 +1,4 @@
-namespace NU_Catalog.Domain.Categories;
+namespace Catalog.Domain.Categories;
 
 public interface ICategoryRepository
 {

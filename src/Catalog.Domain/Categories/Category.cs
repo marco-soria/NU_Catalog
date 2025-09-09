@@ -1,8 +1,8 @@
-using NU_Catalog.Domain.Abstractions;
-using NU_Catalog.Domain.Categories.Events;
+using Catalog.Domain.Abstractions;
+using Catalog.Domain.Categories.Events;
 
 
-namespace NU_Catalog.Domain.Categories;
+namespace Catalog.Domain.Categories;
 
 public class Category : Entity
 {

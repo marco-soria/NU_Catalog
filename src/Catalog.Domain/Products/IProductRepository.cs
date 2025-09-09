@@ -1,4 +1,4 @@
-namespace NU_Catalog.Domain.Products;
+namespace Catalog.Domain.Products;
 
 public interface IProductRepository
 {

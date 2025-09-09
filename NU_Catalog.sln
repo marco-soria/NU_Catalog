@@ -5,13 +5,13 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72D-47B6-A68D-7590B98EB39B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NU_Catalog.Domain", "src\NU_Catalog.Domain\NU_Catalog.Domain.csproj", "{54EC29D6-9CEB-4988-A3C9-672A6F8CFBC9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Domain", "src\Catalog.Domain\Catalog.Domain.csproj", "{54EC29D6-9CEB-4988-A3C9-672A6F8CFBC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NU_Catalog.Application", "src\NU_Catalog.Application\NU_Catalog.Application.csproj", "{13AC66D2-3371-40A7-8609-E7E924AE2964}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Application", "src\Catalog.Application\Catalog.Application.csproj", "{13AC66D2-3371-40A7-8609-E7E924AE2964}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NU_Catalog.Infrastructure", "src\NU_Catalog.Infrastructure\NU_Catalog.Infrastructure.csproj", "{812723EE-0CD4-4790-AFA9-50B15CA6F303}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Infrastructure", "src\Catalog.Infrastructure\Catalog.Infrastructure.csproj", "{812723EE-0CD4-4790-AFA9-50B15CA6F303}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NU_Catalog.Api", "src\NU_Catalog.Api\NU_Catalog.Api.csproj", "{E8D06408-6B7C-49B8-B8EB-FC2E9EDF45C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Api", "src\Catalog.Api\Catalog.Api.csproj", "{E8D06408-6B7C-49B8-B8EB-FC2E9EDF45C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
